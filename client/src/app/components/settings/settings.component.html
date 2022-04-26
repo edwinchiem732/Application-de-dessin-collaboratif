@@ -1,0 +1,19 @@
+<div id="title0">
+  <h1 id="title00">{{change}}</h1>
+</div>
+
+<div class="center">
+  <h2>{{parameter}} </h2>
+  <mat-button-toggle id="langue2" value="english" class="all" (change)="onValChange($event.value)" routerLink = "">English </mat-button-toggle>
+  <mat-button-toggle id="langue" value="french" class="all" (change)="onValChange($event.value)" routerLink = "">Français</mat-button-toggle>
+
+  <h3>{{theme}} </h3>
+  <mat-button-toggle id="lightGrey" value="light grey" class="all" (change)="onChange($event.value)" routerLink = "">{{Light_grey}}</mat-button-toggle>
+  <mat-button-toggle id="darkGrey" value="dark grey" class="all" (change)="onChange($event.value)" routerLink = "">{{Dark_grey}}</mat-button-toggle>
+  <mat-button-toggle id="deepPurple" value="deep purple" class="all" (change)="onChange($event.value)" routerLink = "">{{Deep_Purple}}</mat-button-toggle>
+  <mat-button-toggle id="lightBlue" value="light blue" class="all" (change)="onChange($event.value)" routerLink = "">{{Ligh_blue}}</mat-button-toggle>
+  <mat-button-toggle id="lightPink" value="light pink" class="all" (change)="onChange($event.value)" routerLink = "">{{Light_Pink}}</mat-button-toggle>
+
+<div  class="center">
+  <mat-button-toggle id="conf" (clicl) = "annuler()" routerLink = "">{{cancel}}</mat-button-toggle>
+</div>

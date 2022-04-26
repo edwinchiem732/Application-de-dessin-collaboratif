@@ -1,0 +1,44 @@
+<h1>{{modifyDrawingTitle}}</h1>
+<div id="info">
+    <div>
+        <mat-form-field class="input" floatLabel="always" appearance="outline" class="opt">
+            <mat-label>{{labelModifyDrawing}}</mat-label>
+            <input #drawingname matInput id="drawing" type="text" name="drawing" required [(ngModel)]="drawingNAME" placeholder="{{placeHolderMod}}">
+        </mat-form-field> 
+    </div>
+    <div *ngIf="showMe == true">
+        <mat-form-field class="input" floatLabel="always" appearance="outline" class="opt">
+            <mat-label>{{newPAS}}</mat-label>
+            <input #drawingNewPass matInput id="drawing2" type="text" name="drawing2" required [(ngModel)]="drawingNEWPASS">
+        </mat-form-field> 
+    </div>
+    <div id="visib" *ngIf="showMe == false">
+        <label for="checkbox">{{switch}} </label>
+        <!-- <input type="checkbox" id="checkbox" (change)="toggleEditable($event)"> -->
+        <mat-slide-toggle [formControl]="autoRenew" (change)="onChange()"></mat-slide-toggle>
+        
+        <div *ngIf="this.autoRenew.value == true"> <mat-form-field appearance="fill" class="opt">
+            <mat-label>{{choos}}</mat-label>
+            <mat-select  (selectionChange)="changeVisib($event.value)">
+              <mat-option value="public">{{pub2}}</mat-option>
+              <mat-option value="private">{{priv2}}</mat-option>
+            </mat-select>
+          </mat-form-field> 
+
+        <div *ngIf="visibility2 == 'private'" >
+        <mat-form-field appearance="fill"  class="opt" >
+            <mat-label>{{vers}}</mat-label>
+            <mat-select (selectionChange)="changeAlbumsNames($event.value)">
+              <mat-option *ngFor="let privAlbums of AlbumsNamesPriv" value="{{privAlbums}}">{{privAlbums}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        </div>
+        </div>
+        <p id="errorModifyDrawing">{{error1}}</p>
+    </div>
+
+    <div id="updateButtons">
+        <button mat-raised-button id="annulerDrawing" class="buto" (click)="cancelUpdate()">{{annulModifyDraw}}</button>
+        <button mat-raised-button id="confirmer" class="buto" (click)="updateDrawing()">{{modifDraw}}</button>
+    </div>
+</div>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="500dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/top3_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#E6F2F8"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:checkedButton="@id/pen_button"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <Button
+                android:id="@+id/pen_button"
+                style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="strokePen"
+                app:icon="@drawable/ic_pen_solid_font_awesone"
+                app:iconTint="#555" />
+
+            <Button
+                android:id="@+id/rectangle_button"
+                style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="drawRectangle"
+                app:icon="@drawable/ic_round_square_24"
+                app:iconTint="#555" />
+
+            <Button
+                android:id="@+id/oval_button"
+                style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="drawOval"
+                app:icon="@drawable/ic_round_circle_24"
+                app:iconTint="#555" />
+
+            <Button
+                android:id="@+id/pointer_button"
+                style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pointer"
+                app:icon="@drawable/ic_round_crop_24"
+                app:iconTint="#555" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <Button
+            android:id="@+id/delete_selection"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="deleteSelect"
+            app:icon="@drawable/ic_round_clear_24"
+            app:iconTint="#555" />
+
+        <Button
+            android:id="@+id/clear_all_button"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:onClick="clearAll"
+            app:icon="@drawable/ic_round_clear_all_24"
+            app:iconTint="#555" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+
+        <Button
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="showActiveUserInCurrentDrawing"
+            app:icon="@drawable/ic_round_groups_24"
+            app:iconTint="#555" />
+
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/stroke_width"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4dp"
+            android:onClick="changeWidth"
+            app:icon="@drawable/ic_minus_solid"
+            app:iconTint="#555" />
+
+        <ImageButton
+            android:id="@+id/secondary_color_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/secondary_color_background"
+            android:onClick="changeColor2" />
+
+        <ImageButton
+            android:id="@+id/primary_color_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="-12dp"
+            android:background="@drawable/primary_color_background"
+            android:onClick="changeColor" />
+
+
+        <!--        <Button-->
+        <!--            android:id="@+id/width_button"-->
+        <!--            style="@style/ToolButtonStyle"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:onClick="changeWidth"-->
+        <!--            android:text="Width" />-->
+
+    </LinearLayout>
+
+    <com.mocircle.cidrawing.view.CiDrawingView
+        android:id="@+id/drawing_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@id/top3_layout" />
+
+</RelativeLayout>

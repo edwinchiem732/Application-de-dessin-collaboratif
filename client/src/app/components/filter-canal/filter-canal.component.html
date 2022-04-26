@@ -1,0 +1,8 @@
+<h1>Filtrer les canaux</h1>
+
+<mat-form-field class="search" floatLabel="always" appearance="outline">
+    <mat-label>Entrer un terme pour filtrer les canaux</mat-label>
+    <input #roomfilter (click)="find(roomfilter.value)" matInput id="room" type="text" name="room" required >
+</mat-form-field> 
+
+<button mat-raised-button id="searchRoom" class="searchRoom" (click)="find(roomfilter.value)"><i class="fa fa-search"></i></button>

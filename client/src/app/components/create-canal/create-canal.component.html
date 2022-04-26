@@ -1,0 +1,13 @@
+<h1>{{creaRoom}}</h1>
+
+<div>
+    <mat-form-field class="input" floatLabel="always" appearance="outline">
+        <mat-label>{{labelNameCanal}}</mat-label>
+        <input #roomname matInput id="room" type="text" name="room" required [(ngModel)]="room" placeholder="{{placeHolderCreateRoom}}">
+    </mat-form-field> 
+    <p id="errorCanal">{{error1}}</p>
+</div>
+<div id="createCanalBut"> 
+    <button mat-raised-button id="annulerCreateCanal" (click)="cancelCreate()">{{cancelCreationCanal}}</button>
+    <button mat-raised-button id="createCanal" (click)="create(roomname.value)">{{createConfirmCanal}}</button>
+</div>

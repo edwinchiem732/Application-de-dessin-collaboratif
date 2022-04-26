@@ -1,0 +1,300 @@
+:root {
+	--dark-color-a: #667aff;
+	--dark-color-b: #7386ff;
+	--light-color: #e6e9ff;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+}
+ 
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background: var(--light-color);
+	overflow: hidden;
+}
+
+#principal {
+	width: 500px;
+	float: right;
+}
+
+.title {
+    // background-color: #592bc7;
+    // color: azure;
+}
+
+
+#title10 {
+    margin-left: 50px;
+	display: inline-block;
+}
+
+#changeRoom2 {
+	border-style: solid;
+}
+
+#logout {
+	float: right;
+}
+
+textarea {
+	resize: none;
+	width: 90%;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--light-color);
+	color: var(--dark-color-a);
+	border: 0;
+	font-size: 17px;
+}
+
+/* Chat Page */
+
+.chat-container {
+	background: #ffff;
+	overflow: hidden;
+	height: 95%;
+	width: 100%;
+}
+
+.chat-main {
+	//display: grid;
+	//grid-template-columns: 1fr 3fr;
+	border-style: solid;
+	width: 100%;
+	height: 90%
+}
+
+.child {
+	//display: inline-block;
+	//loat: left;
+	//position: absolute;
+	//left:460px;
+	width:80%;
+	margin-top: 20px;
+}
+
+#send {
+	//display: inline-block;
+	float: right;
+}
+
+// .seperator {
+// 	color: #592bc7;
+// }
+
+.chat-messages {
+	padding: 30px;
+	height: 90%;
+	width: 100%;
+	overflow-y: auto;
+	overflow-x: auto;
+	background-color: #c4bfbf;
+}
+
+
+.chat-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+}
+
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--dark-color-b);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+	// color: #777;
+}
+
+.chat-form-container {
+	padding: 0 30px;
+	background-color: var(--dark-color-a);
+}
+
+.chat-form-container form {
+	display: flex;
+
+}
+
+.chat-form-container input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+}
+
+
+.message-container {
+	width: 40%;
+	word-wrap: break-word;
+	background-color: #FFFFFF;
+	padding: 7px 10px;
+	border-radius: 10px 10px 10px 0px;
+	margin: 10px 0px;
+}
+
+.my-chat{
+	width: 40%;
+	word-wrap: break-word;
+	background-color: #E9EBF9;
+	padding: 7px 10px;
+	border-radius: 10px 10px 0px 10px;
+	margin: 5px 0px 5px auto;
+	margin-left: 100px;
+	left:-100px;
+}
+
+
+
+
+
+/* Join Page */
+.join-container {
+	max-width: 500px;
+	margin: 80px auto;
+	color: #fff;
+}
+
+.join-header {
+	text-align: center;
+	padding: 20px;
+	background: var(--dark-color-a);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.join-main {
+	padding: 30px 40px;
+	background: var(--dark-color-b);
+}
+
+.join-main p {
+	margin-bottom: 20px;
+}
+
+.join-main .form-control {
+	margin-bottom: 20px;
+}
+
+.join-main label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main select {
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main .btn {
+	margin-top: 10px;
+	width: 80%;
+}
+
+@media (max-width: 700px) {
+	.chat-main {
+		display: block;
+	}
+
+	.chat-sidebar {
+		display: none;
+	}
+}
+
+.chat-messages {
+	position: relative;
+	//border: 3px solid orange;
+	//height: 800px;
+}
+
+.message-icon {
+	position: relative;
+	width: 50px;
+	left: 0;
+	//border: 3px solid blue;
+}
+
+.message-area {
+	position: relative;
+	white-space: pre-wrap;
+	width: 800px;
+	//left: 50px;
+	//top: -1000px;
+	//bottom: 1283px;
+	//border: 3px solid red;
+}
+
+.message-others {
+	position: relative;
+	white-space: pre-wrap;
+	width: 800px;
+	//border: 3px solid green;
+}
+
+#avatar1 {
+	background: url(../../../assets/av1.png);
+	width: 100px;
+	height: 100px;
+  }
+  
+  #avatar2 {
+	background: url(../../../assets/av2.png);
+	width: 100px;
+	height: 100px;
+  }
+  
+  #avatar3 {
+	background: url(../../../assets/av3.png);
+	width: 100px;
+	height: 100px;
+  }
+  
+  #avatar4 {
+	background: url(../../../assets/av4.png);
+	width: 100px;
+	height: 100px;
+  }
+  
+  #avatar5 {
+	background: url(../../../assets/av5.png);
+	width: 100px;
+	height: 100px;
+  }
+  
+  #avatar0 {
+	background: url(../../../assets/avatar0.png);
+	width: 100px;
+	height: 100px;
+  }

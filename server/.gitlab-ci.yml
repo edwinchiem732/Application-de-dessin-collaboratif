@@ -1,0 +1,30 @@
+image: node:8.10.0
+
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - install
+  - deploy_production
+
+# Job 1:
+install:
+  only:
+    - staging
+  stage: install
+  script:
+    - npm install
+
+# Job 2:
+# Deploy to staging
+Production:
+  image: ruby:latest
+  only:
+    - staging
+  stage: deploy_production
+  script:
+    - apt-get update -qy
+    - apt-get install -y ruby-dev
+    - gem install dpl
+    - dpl --provider=heroku --app=$HEROKU_APP_PRODUCTION --api-key=$HEROKU_API_KEY

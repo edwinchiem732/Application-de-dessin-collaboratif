@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout android:id="@+id/top_layout" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="#999"
+        android:orientation="horizontal" android:paddingLeft="2dp" android:paddingRight="2dp">
+
+        <Button android:id="@+id/pointer_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="pointer" android:text="Pointer" />
+
+        <Button android:id="@+id/select_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="select" android:text="Select" />
+
+        <Button android:id="@+id/transform_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="transform" android:text="Transform" />
+
+        <Button android:id="@+id/eraser_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="eraser" android:text="Eraser" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/top2_layout" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_below="@id/top_layout"
+        android:background="#999" android:orientation="horizontal" android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <Button android:id="@+id/stroke_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="stroke" android:text="Stroke" />
+
+        <Button android:id="@+id/shape_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="insertShape" android:text="Shape" />
+
+        <Button android:id="@+id/photo_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="insertPhoto" android:text="Photo" />
+
+        <Button android:id="@+id/text_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="insertText" android:text="Text" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/bottom2_layout" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:background="#999" android:orientation="horizontal" android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <Button android:id="@+id/undo_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="undo" android:text="Undo" />
+
+        <Button android:id="@+id/redo_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="redo" android:text="Redo" />
+
+        <Button android:id="@+id/arrange_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="arrange" android:text="Arrange" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/bottom_layout" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_above="@id/bottom2_layout"
+        android:background="#999" android:orientation="horizontal" android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <Button android:id="@+id/color_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="changeColor" android:text="Color 1" />
+
+        <Button android:id="@+id/secondary_color_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="changeColor2" android:text="Color 2" />
+
+        <Button android:id="@+id/width_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="changeWidth" android:text="Width" />
+
+        <Button android:id="@+id/style_button" style="@style/ToolButtonStyle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:onClick="changeStyle" android:text="Style" />
+    </LinearLayout>
+
+    <com.mocircle.cidrawing.view.CiDrawingView android:id="@+id/drawing_view"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout" android:layout_below="@id/top2_layout" />
+</RelativeLayout>

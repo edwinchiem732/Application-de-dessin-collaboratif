@@ -1,0 +1,160 @@
+main {
+    position: relative;
+}
+
+#title {
+    // background-color: #592bc7;
+    // color: azure;
+}
+
+#title02 {
+    margin-left: 50px;
+    // background-color: #592bc7;
+    // color: azure;
+}
+
+// .container {
+//     // margin: auto;
+//     // text-align: center;
+//     // border: 3px solid green;
+//     // height: 500px;
+//     // vertical-align: middle;
+//     // line-height: 500px; 
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     height: 100vh;
+// }
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+  
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+  
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* Whatever width you want */
+}
+
+#color {
+    font-size: 50px;
+    height: 50px;
+}
+
+.pseudo {
+    position: relative;
+    display: block;
+    height: 60px;
+}
+
+.pass {
+    position: relative;
+    display: block;
+    margin-top: 12px;
+    height: 70px;
+}
+
+mat-label {
+    color: black;
+}
+
+button {
+    width: 150px;
+    margin: 5px;
+    // background-color: #592bc7;
+    // color:azure;
+}
+
+body {
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+#error {
+    visibility: hidden;
+    color: red;
+}
+
+// .mat-form-field-appearance-outline .mat-form-field-outline {
+//     color: rgba(255,255,255,0.6);
+//  }
+
+// #buttonMain2 {
+//     padding: 0 6px 0 6px;
+//     margin: 6px 8px 6px 8px;
+//     min-width: 100px;
+//     border-radius: 0px;
+//     font-size: 14px;
+//     text-align: center;
+//     font-weight: bold;
+//     text-decoration:none;
+//     border: none;
+//     outline: none;
+//     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+// }
+
+
+.erreuAnimation {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97);
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    transform: translate3d(0, 0, 0);
+    // transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  }
+  
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }

@@ -1,0 +1,121 @@
+<resources>
+
+    <string name="app_name" translatable="false">Colorimage</string>
+    <string name="home">Home</string>
+    <string name="user_pseudo" translatable="false">Pseudo</string>
+    <string name="ip_address" translatable="false">Adresse IP du serveur</string>
+
+    <string name="preferences_colorimage" translatable="false">preferences_colorimage</string>
+    <string name="canvasContentDescription" translatable="false">ColorImage is a simple drawing app. Drag your fingers to draw.</string>
+    <string name="title_activity_login" translatable="false">LoginActivity</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password" translatable="false">Password</string>
+    <string name="action_sign_in" translatable="false">Sign in or register</string>
+    <string name="action_sign_in_short" translatable="false">Sign in</string>
+    <string name="welcome" translatable="false">"Welcome !"</string>
+    <string name="invalid_username" translatable="false">Not a valid username</string>
+    <string name="invalid_password" translatable="false">Password must be >5 characters</string>
+    <string name="login_failed" translatable="false">"Login failed"</string>
+
+
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <string name="modify_album">Modify album</string>
+    <string name="account_menu">Account menu</string>
+    <string name="create_album">Create album</string>
+    <string name="create">Create</string>
+    <string name="modify">Modify</string>
+    <string name="filter">Filter</string>
+    <string name="create_drawing">Create drawing</string>
+    <string name="trier">Sort</string>
+    <string name="chat">Chat</string>
+    <string name="send_message">Send message</string>
+    <string name="connection">Sign in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="register_page_title">Create an account</string>
+    <string name="register_button">Register</string>
+    <string name="have_an_account_login"><u>Have an account? Login</u></string>
+    <string name="create_room">Create room</string>
+    <string name="filter_rooms">Filter rooms</string>
+    <string name="join">Join</string>
+    <string name="open">Open</string>
+    <string name="preferences">Preferences</string>
+    <string name="delete">Delete</string>
+    <string name="collaborators">Number of collaborators: %1$d</string>
+    <string name="drawing_title">Drawing name: %1$s</string>
+    <string name="drawing_owner">Owner: %1$s</string>
+    <string name="creation_date">Creation date: %1$s</string>
+    <string name="edit">Edit</string>
+    <string name="properties">Properties</string>
+    <string name="enter_new_album_name">Enter new album name</string>
+    <string name="enter_description">Enter short description</string>
+    <string name="enter_drawing_name">Enter new drawing name</string>
+    <string name="enter_term_filter_rooms">Enter term to filter rooms</string>
+    <string name="enter_term_filter_drawings">Enter term to filter drawings</string>
+    <string name="leave">Leave</string>
+    <string name="enter_new_room_name">Enter new room name</string>
+    <string name="english_button">English</string>
+    <string name="french_button">French</string>
+    <string name="fields_cant_be_empty">Field can\'t be empty</string>
+    <string name="cancel">Cancel</string>
+    <string name="user_already_connected">User already connected</string>
+    <string name="invalid_credentials">Invalid credentials</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="email_already_used">Email already used</string>
+    <string name="album_name">Album name</string>
+    <string-array name="album_names"></string-array>
+    <string name="modify_drawing">Modify drawing</string>
+    <string name="modify_drawing_name">Modify drawing name</string>
+    <string name="choose_visibility">Choose visibility</string>
+    <string name="modify_visibility">Modify visibility</string>
+    <string name="to_which_album">To which album ?</string>
+    <string name="not_the_owner">You are not the owner of the album !</string>
+    <string name="not_a_member">You are not a member of the album !</string>
+    <string name="request_sent">Request sent !</string>
+    <string name="is_the_owner">You are the owner of the album !</string>
+    <string name="not_the_owner_drawing">You are not the owner of the drawing !</string>
+    <string name="filter_room_by_name">Filter rooms by name</string>
+    <string name="no_drawing">Album is empty</string>
+    <string name="default_room">"You can\'t delete or leave the default room"</string>
+    <string name="public_album">"You can\'t delete or leave the public album"</string>
+    <string name="choose_to_accept">Choose a user to let him join the album %1$s</string>
+    <string name="settings">Settings</string>
+    <string name="language">Language</string>
+    <string name="theme">Theme</string>
+    <string name="add_protection">Add protection</string>
+    <string name="enter_password_protection">Enter a protection password</string>
+    <string name="enter_password_to_join">Enter password to edit drawing</string>
+    <string name="wrong_password">Wrong password</string>
+    <string name="add_as_friend_btn_label">Add as friend</string>
+    <string name="drawing_active_users_modal_title">Active collaborators in drawing</string>
+    <string name="profile_email"><b>Email :</b> %1$s</string>
+    <string name="profile_nickname"><b>Nickname :</b> %1$s</string>
+    <string name="profile_last_logged_in"><b>Last logged in :</b> %1$s</string>
+    <string name="profile_last_logged_out"><b>Last logged out :</b> %1$s</string>
+    <string name="profile_page_title">Profile</string>
+    <string name="remove_as_friend_btn_label">Remove as friend</string>
+    <string name="modify_password">Enter your new protection password</string>
+    <string name="filter_drawings">Filter drawings</string>
+    <string name="not_joined_room">You have not join this room</string>
+    <string name="leave_default">"You can\'t leave the default room"</string>
+    <string name="not_the_owner_room">You are not the creator of the room !</string>
+    <string name="already_joined_room">You have already joined this room</string>
+    <string name="no_empty_field">You cannot leave blank fields</string>
+    <string name="no_filter">Filter removed</string>
+    <string name="empty_friend_list_placeholder">Friends list : -</string>
+    <string name="friend_list_header_text">Friends list</string>
+    <string name="drawings">Drawings</string>
+    <string name="album">Albums</string>
+    <string name="rooms">Rooms</string>
+    <string name="nickname">Nickname</string>
+
+
+</resources>

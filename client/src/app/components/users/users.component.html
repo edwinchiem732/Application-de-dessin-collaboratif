@@ -1,0 +1,15 @@
+<h1>{{addTitle}}</h1>
+
+
+<div class="listUsers" *ngFor="let users of activeUsers[ho]">
+    <div class="listUsersText">
+        <p id="userID" >
+            {{users}}
+        </p> 
+    </div>
+    <div class="listUsersButtons">
+        <button mat-raised-button id="userIDButton" (click)="addFriend($event.target)" >
+            {{add}} <span class='special-word'>{{users}}</span>
+        </button>
+    </div>
+</div>

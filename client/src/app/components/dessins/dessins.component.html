@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="wrapper">
+    <div id="title5">
+        <button class = "btn" id="back" (click)="son()" routerLink = "/albums"><i class="fa fa-chevron-circle-left" aria-hidden="true"style="font-size:50px"></i></button>
+        <h1 id="title6">{{drawingTitle}}</h1>
+        <button class = "btn" id="logout" (click)="logout()"><i class="fa fa-sign-out" aria-hidden="true" style="font-size:50px"></i></button>
+    </div> 
+
+    <div class="subtext-container">
+    <div>
+        <!-- <mat-form-field class="input" floatLabel="always" appearance="outline">
+            <mat-label>{{drawingInput}}</mat-label>
+            <input #drawingname matInput id="drawing" type="text" name="drawing" required [(ngModel)]="drawing">
+        </mat-form-field>  -->
+     
+        <!-- <button mat-raised-button id="createRoom" class="buto" (click)="createDrawing(drawingname.value)">{{creaDrawing}}</button> -->
+        <button mat-raised-button id="createRoom" class="buto" (click)="openCreate()">{{creaDrawing}}</button>
+    </div>
+    <div>
+        <mat-form-field class="inputFind" floatLabel="always" appearance="outline">
+            <mat-label>{{findDraw2}}</mat-label>
+            <input #findDraw matInput id="findDraw" type="text" name="findDraw" required placeholder="{{placeHolderFindDraw}}">
+        </mat-form-field> 
+     
+        <button mat-raised-button id="findDrawButton" class="buto" (click)="find(findDraw.value)"><i class="fa fa-search"></i></button>
+    </div>
+    </div>
+    <!-- <div> 
+
+        <mat-form-field class="search" floatLabel="always" appearance="outline">
+            <mat-label>Nom de la salle/createur</mat-label>
+            <input #roomfilter matInput id="room" type="text" name="room" required >
+        </mat-form-field> 
+     
+        <button mat-raised-button class="searchRoom" >Trouver une salle</button>
+    </div> -->
+
+    <div id="galleryView">
+        <div id="galleryContainer">
+            <button
+                mat-raised-button
+                class="left-arrow"
+                id="left-arrow"
+                (click)="leftSideSlide()"
+            >
+            <i class="fa fa-arrow-left" aria-hidden="true" style="font-size:30px"></i>
+            </button>
+            <div id="mainView" #DessinCenter></div>
+            <!-- <div id="rightView" #DessinRight></div>
+            <div id="LeftView" #DessinLeft></div> -->
+            <button
+                mat-raised-button
+                class="right-arrow"
+                id="right-arrow"
+                (click)="rightSideSlide()"
+            >
+            <i class="fa fa-arrow-right" aria-hidden="true" style="font-size:30px"></i>
+            </button>
+        </div>
+    </div>
+    <div id="InfoDessins">
+        <p>{{drawName}} {{names[this.centerImage]}}</p>
+        <p>{{numberOfPeople}} {{nbrMembres[this.centerImage]}}</p>
+        <p>{{own}} {{owners[this.centerImage]}}</p>
+        <p>{{datecrea}} {{creationDate[this.centerImage]}}</p>
+        <p>{{lik}} {{nbrLiked[this.centerImage]}} </p>
+        <div class="subtext-container2">
+            <button mat-raised-button id="DessinsButtonOpen" class="buto" (click)="openDessins($event.target)">
+                {{open}} <span class='special-word'>{{names[this.centerImage]}}</span>
+            </button>
+            <button mat-raised-button id="DessinsButtonDelete" class="buto" (click)="deleteDessins($event.target)">
+                {{delete}} <span class='special-word'>{{names[this.centerImage]}}</span>
+            </button>
+            <button mat-raised-button id="settingsButton" class="buto" (click)="openSettings($event.target)">
+                {{prop}} <span class='special-word'>{{names[this.centerImage]}}</span>
+            </button>
+            <button mat-raised-button id="likeButton" class="buto" (click)="like($event.target)">
+                <span class='special-word'>{{names[this.centerImage]}}</span><i class="fa fa-thumbs-o-up"></i>
+            </button>
+        </div>
+
+        <!-- <button mat-raised-button id="Visibilite" (click)="changerPublic($event.target)">
+            Public <span class='special-word'>{{names[this.centerImage]}}</span>
+        </button> -->
+    </div>
+
+</div>

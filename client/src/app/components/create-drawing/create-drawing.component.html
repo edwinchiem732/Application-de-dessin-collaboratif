@@ -1,0 +1,41 @@
+<h1>{{createDrawingTitle}}</h1>
+<div id="info5">
+    <div>
+        <mat-form-field class="input" floatLabel="always" appearance="outline" class="opt2">
+            <mat-label>{{nameOfDrawing}}</mat-label>
+            <input #drawingname matInput id="drawing" type="text" name="drawing" required [(ngModel)]="drawing" placeholder="{{placeHolderCreateDrawing}}">
+        </mat-form-field> 
+    </div>
+    <div id="createDraw2">        
+        <div *ngIf="dont != 'PUBLIC'" > 
+            <mat-form-field appearance="fill" class="opt2">
+            <mat-label>{{chooseVisi}}</mat-label>
+            <mat-select (selectionChange)="chooseVisib($event.value)">
+              <mat-option value="public">{{pub}}</mat-option> 
+              <mat-option value="protected">{{pro}}</mat-option>
+              <mat-option value="private">{{priv}}</mat-option>
+            </mat-select>
+          </mat-form-field> 
+        </div>
+        <div *ngIf="dont == 'PUBLIC'" > 
+            <mat-form-field appearance="fill" class="opt2">
+            <mat-label>{{chooseVisi}}</mat-label>
+            <mat-select (selectionChange)="chooseVisib($event.value)">
+              <mat-option value="public">{{pub}}</mat-option> 
+              <mat-option value="protected">{{pro}}</mat-option>
+            </mat-select>
+          </mat-form-field> 
+        </div>
+        <div *ngIf="visibi2 == 'protected'">
+            <mat-form-field class="input" floatLabel="always" appearance="outline" class="opt2">
+                <mat-label>{{passLabel}}</mat-label>
+                <input matInput id="drawing" type="text" name="password" required [(ngModel)]="password" placeholder="{{placeHolderPass}}">
+            </mat-form-field> 
+        </div>
+        <p id="errorCreateDrawing">{{error1}}</p>
+    </div>
+    <div id="updateButtonsDraw2">
+        <button mat-raised-button id="annulerCreationDrawing" class="buto" (click)="cancelCreate()">{{cancelCreationDrawwing}}</button>
+        <button mat-raised-button id="créer" class="buto" (click)="createDrawing(drawingname.value)">{{createConfirmDrawing}}</button>
+    </div>
+</div>

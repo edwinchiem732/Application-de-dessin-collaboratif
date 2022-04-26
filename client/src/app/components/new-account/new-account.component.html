@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <main [@routeAnimations] = "prepareRoute(outlet)" class="content">
+        <router-outlet #outlet = "outlet"></router-outlet>
+    <body>
+
+        <div id="title2">
+            <h1>{{createTitle}}</h1>
+        </div>
+
+        <div class="outer">
+            <div class="middle">
+                <div class="inner">
+
+                    <h2 id="color">Créer un compte</h2>
+                    <button id="avatarDE" (click)="openAvatar()"><span class='special-word'>1</span></button>
+                    
+                    <div class="email">    
+                        <mat-form-field class="input" floatLabel="always" appearance="outline" style="width: 300px;">
+                            <mat-label>{{emai}}</mat-label>
+                            <input matInput id="mail" type="text" name="email" required required [(ngModel)]="mail">
+                        </mat-form-field> 
+                    </div>
+
+                    <div class="pseudo">
+                        <mat-form-field class="input" floatLabel="always" appearance="outline" style="width: 300px;">
+                            <mat-label>Pseudo</mat-label>
+                            <input matInput id="name" type="text" name="username" required required [(ngModel)]="name">
+                        </mat-form-field> 
+                    </div>
+
+
+                    <div class="pass">    
+                        <mat-form-field class="input" floatLabel="always" appearance="outline" style="width: 300px;">
+                            <mat-label>{{password}}</mat-label>
+                            <input matInput id="pass" type="password" name="password" required required [(ngModel)]="pass">
+                        </mat-form-field> 
+                    </div>
+
+                    <div class="pass">    
+                        <mat-form-field id="myForm" class="input" floatLabel="always" appearance="outline" style="width: 300px;"> 
+                            <mat-label>{{repeatPass}}</mat-label>
+                            <input matInput id="passRepeat" type="password" name="passrepeat" required [(ngModel)]="passRepeat">
+                        </mat-form-field> 
+                    </div>
+
+                    <div>
+                        <p id="error">{{error1}}</p>
+                    </div>
+
+                    <!-- <button mat-raised-button id="buttonMain5" (click)="cancelClick()">{{cancel}}</button> -->
+                    <button mat-raised-button id="buttonMain6" (click)="closeClick()" style="width: 300px;" >{{confirm}}</button>
+                    <p id="already" (click)="cancelClick()">Vous avez déjà un compte? Connexion</p>
+                    <!-- <button mat-raised-button id="buttonMain7" (click)="openAvatar()" >Avatar</button> -->
+
+                </div>
+            </div>
+        </div>
+    </body>
+</main>
+</html>

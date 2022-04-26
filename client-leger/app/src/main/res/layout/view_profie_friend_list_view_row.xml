@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="14dp"
+    android:paddingTop="4dp"
+    android:paddingRight="14dp"
+    android:paddingBottom="4dp">
+
+    <TextView
+        android:id="@+id/profile_members_list_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:paddingLeft="2dp"
+        android:text="member_list_nickname"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:id="@+id/remove_friend_request_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:backgroundTint="#E4868E"
+        android:text="@string/remove_as_friend_btn_label"
+        android:textColor="@color/black" />
+
+</LinearLayout>

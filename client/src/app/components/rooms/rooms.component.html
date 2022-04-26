@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="wrapper">
+    <div id="title7">
+        <button class = "btn" id="back" (click)="son()" routerLink = "/albums"><i class="fa fa-chevron-circle-left" aria-hidden="true"style="font-size:50px"></i></button>
+        <h1 id="title8">{{roomTitle}}</h1>
+        <button (click)="logout()" class = "btn" id="logout" routerLink = ""><i class="fa fa-sign-out" aria-hidden="true" style="font-size:50px"></i></button>
+    </div>
+
+    <!-- <div class="rooms" id="rooms" *ngFor="let roomName of this.list" style="text-align:right">
+        {{ roomName }}
+    </div> -->
+
+    <div class="subtext-container2">
+        <button mat-raised-button id="CreerCanal" (click)="createCanal()">{{creaRoom}}</button>
+        <!-- <button mat-raised-button id="filtrerCanaux" (click)="filterCanal()">Filtrer les canaux</button> -->
+        <div>
+
+            <mat-form-field class="search" floatLabel="always" (click)="son()" appearance="outline">
+                <mat-label>{{nameOfRoomCreator}}</mat-label>
+                <input #roomfilter (click)="find(roomfilter.value)" matInput id="room" type="text" name="room" required >
+            </mat-form-field> 
+         
+            <button mat-raised-button id="searchRoom" class="searchRoom" (click)="find(roomfilter.value)"><i class="fa fa-search"></i></button>
+        
+        </div>
+    </div>
+
+
+    <!-- <div class="subtext-container">
+
+<div>
+    <mat-form-field class="input" floatLabel="always" appearance="outline">
+        <mat-label>{{nameOfNewRoom}}</mat-label>
+        <input #roomname matInput id="room" type="text" name="room" required [(ngModel)]="room">
+    </mat-form-field> 
+ 
+    <button mat-raised-button id="createRoom" (click)="create(roomname.value)"><i class="fa fa-plus"></i></button>
+</div>-->
+<!-- <div>
+
+    <mat-form-field class="search" floatLabel="always" appearance="outline">
+        <mat-label>{{nameOfRoomCreator}}</mat-label>
+        <input #roomfilter (click)="find(roomfilter.value)" matInput id="room" type="text" name="room" required >
+    </mat-form-field> 
+ 
+    <button mat-raised-button id="searchRoom" class="searchRoom" (click)="find(roomfilter.value)"><i class="fa fa-search"></i></button>
+
+</div> -->
+    <!-- </div>  -->
+
+    <div class="listRooms" *ngFor="let buttonText of buttonsTexts">
+        <div class="listRoomsText">
+            <p id="roomID" >
+                {{buttonText}}
+            </p> 
+        </div>
+        <div class="listRoomsButtons">
+            <button mat-raised-button id="roomIDButton" (click)="changeRoom($event.target)" >
+                {{join2}} <span class='special-word'>{{buttonText}}</span>
+            </button>
+            <!-- <button mat-raised-button id="roomIDQuitterButton" (click)="quitRoom($event.target)">
+                {{ quit }} <span class='special-word'>{{buttonText}}</span>
+            </button> -->
+            <button mat-raised-button id="roomIDButtonDelete" (click)="deleteRoom($event.target)">
+                {{delete}} <span class='special-word'>{{buttonText}}</span>
+            </button>
+        </div>
+    </div>
+
+    <div>
+        <p id="error">Error</p>
+    </div>
+    <!-- <button mat-raised-button class="cancel" (click)="cancel()">Annuler</button> -->
+
+</div>

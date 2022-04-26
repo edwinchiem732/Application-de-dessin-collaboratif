@@ -1,0 +1,248 @@
+.wrapper {
+    position: relative;
+}
+ 
+.title {
+    // background-color: #592bc7;
+    // color: azure;
+}
+
+#title6 {
+    margin-left: 50px;
+    display: inline-block;
+}
+
+#logout {
+    float: right;
+    border: black;
+}
+
+// .input {
+//     float: left;
+//     width: 90%;
+// }
+
+#createRoom {
+    // float: right;
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+}
+
+.inputFind {
+    float: left;
+    width: 90%;
+}
+
+#findDrawButton {
+    float: right;
+    width: 10%;
+    height: 60px;
+    margin-top: 5px;
+}
+
+.subtext-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+.buto {
+    // background-color: #592bc7;
+    // color:azure;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 5px 15px;
+    background: var(--light-color);
+    color: var(--dark-color-a);
+    border: 0;
+    font-size: 17px;
+}
+
+#galleryContainer {
+    height: 300px;
+    width: 800px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 10px;
+}
+
+#galleryView {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+#mainView {
+    position: relative;
+    // height: 425px;
+    // width: 350px;
+    height: 350px;
+    width: 700px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 1;
+    border: black 1px solid;
+}
+
+#leftView {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    opacity: 0.5;
+    border-radius: 5px;
+    transform: skewy(0deg); // tilt
+    transform-origin: top right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black 1px solid;
+}
+
+#rightView {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    opacity: 0.5;
+    border-radius: 5px;
+    transform: skewy(0deg); // tilt
+    transform-origin: top left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black 1px solid;
+}
+
+.left-arrow {
+    border: black 1px solid;
+    margin-right: 10px;
+    width: 50px;
+    height: 45px;
+}
+
+.right-arrow {
+    border: black 1px solid;
+    margin-left: 10px;
+    width: 50px;
+    height: 45px;
+}
+
+.subtext-container2 {
+    width: 100%;
+    display: inline-block;
+}
+
+#DessinsButtonOpen {
+    width: 30%;
+    margin-right: 25px;
+    background-color: #2ad11a;
+}
+
+#DessinsButtonDelete {
+    width: 30%;
+    background-color: #FA4353;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#settingsButton { 
+    width: 30%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#InfoDessins {
+    text-align: center;
+}
+
+.special-word { 
+    font-size: 0;
+} 
+
+.fa-comments {
+    color: black;
+  }
+
+  .notifi {
+    display: inline-block; /* Inline elements with width and height. TL;DR they make the icon buttons stack from left-to-right instead of top-to-bottom /
+    position: relative; / All 'absolute'ly positioned elements are relative to this one /
+    padding: 2px 5px; / Add some padding so it looks nice */
+    float: right;
+  }
+
+.button__badge {
+    visibility: hidden; //A CHANGER
+    position: absolute;
+    top: 0;
+    right: 0;
+  padding: 1px 9px;
+  border-radius: 50%;
+  background: red;
+  color: red;
+}
+
+
+.erreuAnimation {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97);
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    transform: translate3d(0, 0, 0);
+    // transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  }
+  
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+        <body>
+            <div id="title01">
+                <h1 id="title02">Colorimage</h1>
+            </div> 
+    
+            <div class="outer">
+                <div class="middle">
+                    <div class="inner">
+    
+                        <h2 id="color">{{connection}}</h2>
+    
+                        <main [@routeAnimations] = "prepareRoute(outlet)" class="content">
+                            <router-outlet #outlet = "outlet"></router-outlet>
+                        <div class="pseudo">
+                            <mat-form-field class="input" floatLabel="always" appearance="outline">
+                                <mat-label>{{emai}} </mat-label>
+                                <input matInput id="email" type="text" name="email" required [(ngModel)]="email">
+                            </mat-form-field> 
+                        </div>
+    
+                        <div class="pass">    
+                            <mat-form-field class="input" floatLabel="always" appearance="outline">
+                                <mat-label>{{pass}}</mat-label>
+                                <input matInput id="password" type="password" name="password" required [(ngModel)]="password">
+                            </mat-form-field> 
+                        </div>
+                    </main>
+    
+                        <div>
+                            <p id="error">Error</p>
+                        </div>
+    
+                        <button mat-raised-button id="buttonMain" (click)="registerClick()">{{creer}}</button>
+                        <button mat-raised-button id="buttonMain2" (click)="closeClick()">{{rejoindre}}</button>
+                        <button mat-raised-button id="buttonMain3" (click)="openSettings()">{{options}}</button>
+                        <!-- <button mat-raised-button id="buttonMain4" (click)="avatar()" class="first_button">avatar</button> -->
+                        <!-- <button mat-raised-button (click)="closeClick()">Rejoindre le chat</button> -->
+    
+                    </div>
+                </div>
+            </div>
+        </body>
+</html>

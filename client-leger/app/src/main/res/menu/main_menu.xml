@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/chat_icon"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="Cart"
+        app:actionLayout="@layout/custom_action_item_layout"
+        app:showAsAction="always" />
+
+    <!--    <item-->
+    <!--        android:id="@+id/profile"-->
+    <!--        android:icon="@drawable/ic_round_account_circle_24"-->
+    <!--        android:title="Profil"-->
+    <!--        app:showAsAction="ifRoom" />-->
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_round_logout_24"
+        android:title="Déconnexion"
+        app:showAsAction="ifRoom" />
+
+</menu>

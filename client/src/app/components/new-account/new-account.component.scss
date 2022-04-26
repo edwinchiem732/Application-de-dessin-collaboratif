@@ -1,0 +1,187 @@
+.title {
+    // background-color: #592bc7;
+    // color: azure;
+}
+
+#title {
+    margin-left: 50px;
+}
+
+// .container {
+//     margin: auto;
+//     text-align: center;
+//     height: 500px;
+//     vertical-align: middle;
+//     line-height: 500px;  
+// }
+
+#avatar1 {
+    background: url(../../../assets/av1.png);
+    width: 100px;
+    height: 100px;
+  }
+
+  
+  #avatar2 {
+    background: url(../../../assets/av2.png);
+    width: 100px;
+    height: 100px;
+  }
+
+  
+  #avatar3 {
+    background: url(../../../assets/av3.png);
+    width: 100px;
+    height: 100px;
+  }
+  
+  #avatar4 {
+    background: url(../../../assets/av4.png);
+    width: 100px;
+    height: 100px;
+  }
+
+
+  #avatar5 {
+    background: url(../../../assets/av5.png);
+    width: 100px;
+    height: 100px;
+  }
+
+  
+  #avatar0 {
+    background: url(../../../assets/avatar0.png);
+    width: 100px;
+    height: 100px;
+  }
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+  
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+  
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* Whatever width you want */
+}
+
+.pseudo {
+    position: relative;
+    display: block;
+    height: 60px;
+}
+
+.email {
+    position: relative;
+    display: block;
+    margin-top: 12px;
+    height: 60px;
+}
+
+.pass {
+    position: relative;
+    display: block;
+    margin-top: 12px;
+    height: 70px;
+}
+
+mat-label {
+    color: black;
+}
+
+button {
+    width: 150px;
+    margin: 5px;
+    // background-color: #592bc7;
+    // color:azure;
+}
+
+body {
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+#already:hover {
+    text-decoration: underline;
+}
+
+#avatarDE {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url("../../../assets/avdefault.png");
+}
+
+.special-word { 
+    font-size: 0;
+  } 
+
+#error {
+    visibility: hidden;
+    color: red;
+}
+
+.erreuAnimation {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97);
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    transform: translate3d(0, 0, 0);
+    // transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  }
+  
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>  
+<body>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div id="title3">
+            <h1 id="title4">Albums</h1>
+            <button (click)="logout()" class = "btn" id="logout"><i class="fa fa-sign-out" aria-hidden="true" style="font-size:50px"></i></button>
+        </div>
+        <!-- <div class="center_me"> -->
+
+                <div class="subtext-container">   
+                    <button mat-raised-button id="createAlbum" (click)="createAlbum()">{{creaAlbum}}</button>
+                    <button mat-raised-button id="menuCompte" (click)="son()" routerLink="/profil">{{accoutMenu}}</button>
+                    <!-- <button mat-raised-button id="chatRoom" routerLink="/clavardage" (click)="defaultRoom()">{{goChat}}</button>  -->
+                    <button mat-raised-button id="chatRoom" (click)="son()" routerLink="/rooms">{{goChat}}</button> 
+                    <button mat-raised-button id="sortAlpha" (click)="sortAlpha()"><i class="fa fa-sort-alpha-asc"></i></button>
+                    <button mat-raised-button id="sortCreate" (click)="sortCreation()"><i class= "fa fa-sort-numeric-asc"></i></button>
+                </div>
+        <!-- </div> -->
+
+
+        <!-- <div class="SectionAlbums" *ngFor="let album of AlbumsPublic">
+            <div class="listAlbums">
+                <div class="albums">
+                    {{album}}
+                </div>
+            </div>    
+            <div class="listAlbumsButtons">
+                <p> Public Album </p>
+                <p> {{album}} </p>
+                <button mat-raised-button id="roomIDButton" (click)="openAlbum()">
+                    Ouvrir <span class='special-word'>{{album}}</span>
+                </button>
+                <button mat-raised-button id="roomIDButtonDelete"  >
+                    Supprimer <span class='special-word'>{{album}}</span>
+                </button>
+            </div>
+        </div> -->
+
+        <div class="SectionAlbums" *ngFor="let albumName of AlbumsNames; let i = index">
+            <div class="listAlbums"> 
+                <!-- <p> Album: {{AlbumsVisibilite[i]}} </p> -->
+                <div id="albumCover" class="albums">
+                    {{albumName}}
+                </div>
+                <button mat-raised-button id="albumIDButton" (click)="openAlbum($event.target)">
+                    {{open}} <span class='special-word'>{{albumName}}</span>
+                </button>
+                <button mat-raised-button id="albumIDButtonDelete"  (click)="deleteAlbum($event.target)">
+                    {{delete}} <span class='special-word'>{{albumName}}</span>
+                </button>
+                <button mat-raised-button id="albumQuitter" (click)="quitAlbum($event.target)">
+                    {{quit}} <span class='special-word'>{{albumName}}</span> 
+                </button>
+                <button mat-raised-button id="albumModifier" (click)="modifyAlbum($event.target)" >
+                    {{prop}} <span class='special-word'>{{albumName}}</span>
+                </button>
+                <!-- <div class="listAlbumsButtons"> -->
+                    <!-- <p> Public Album </p>
+                    <p> {{album}} </p> -->
+                    <!-- <button mat-raised-button id="roomIDButton" (click)="openAlbum()">
+                        Ouvrir <span class='special-word'>{{album}}</span>
+                    </button>
+                    <button mat-raised-button id="roomIDButtonDelete"  >
+                        Supprimer <span class='special-word'>{{album}}</span>
+                    </button> -->
+                <!-- </div> -->
+            </div>    
+        </div>
+
+</body>
+
+</html>

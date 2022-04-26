@@ -1,0 +1,124 @@
+.wrapper {
+    position: relative;
+}
+
+#title100 {
+    // background-color: #592bc7;
+    // color: azure;
+}
+
+#title101 {
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 5px 15px;
+    background: var(--light-color);
+    color: var(--dark-color-a);
+    border: 0;
+    font-size: 17px;
+}
+
+#big {
+    // display: inline-block;
+}
+
+#avatarDiv {
+    float: left;
+    width: 50%;
+}
+
+#infoProfil {
+    // border-style: solid;
+    // border-color: black;
+    // border-radius: 50px;
+    // float: right;
+    // text-align: center;
+}
+
+#logout {
+    float: right;
+    border: black;
+}
+
+#avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    // margin: 0 auto;
+    float: right;
+    margin-right: 20px;
+}
+
+.special-word { 
+    font-size: 0;
+} 
+
+.listUsersText {
+    float: left;
+    width: 50%;
+}
+
+#userID {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+} 
+
+.listUsersButtons {
+    float: right;
+    width: 50%;
+}
+
+#userIDButton {
+    width: 50%;
+    float: left;
+    margin-bottom: 15px;
+    background-color: #FA4353;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin-top: 250px;
+}
+
+.fa-comments {
+    color: black;
+  }
+
+  .notifi {
+    display: inline-block; /* Inline elements with width and height. TL;DR they make the icon buttons stack from left-to-right instead of top-to-bottom /
+    position: relative; / All 'absolute'ly positioned elements are relative to this one /
+    padding: 2px 5px; / Add some padding so it looks nice */
+    float: right;
+  }
+
+.button__badge {
+    visibility: hidden; //A CHANGER
+    position: absolute;
+    top: 0;
+    right: 0;
+  padding: 1px 9px;
+  border-radius: 50%;
+  background: red;
+  color: red;
+}
+
+

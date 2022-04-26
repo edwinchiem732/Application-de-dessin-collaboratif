@@ -1,0 +1,20 @@
+<h1>{{ modifAlbum }}</h1>
+<div id="info">
+    <div>
+        <mat-form-field class="input" floatLabel="always" appearance="outline">
+            <mat-label>{{ labelModifyDrawing }}</mat-label>
+            <input #drawingname matInput id="drawing" type="text" name="drawing" required [(ngModel)]="albumNAME" placeholder="Entrez un nom du nouvel album">
+        </mat-form-field> 
+    </div>
+    <div>
+        <mat-form-field class="input" floatLabel="always" appearance="outline">
+            <mat-label>{{ newDesc }}</mat-label>
+            <input #drawingname matInput id="drawing" type="text" name="drawing" required [(ngModel)]="albumDESCRIPTION" placeholder="Entrez une courte decription">
+        </mat-form-field> 
+        <p id="errorAlbum">{{ error1 }}</p>
+    </div>
+    <div id="buttonModAlbum">
+        <button mat-raised-button id="Cancel" class="buto" (click)="close()" >{{ cancel }}</button>
+        <button mat-raised-button id="confirmer" class="buto" (click)="updateAlbum()">{{ modifDraw }}</button>
+    </div>
+</div>

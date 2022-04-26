@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="wrapper">
+    <div id="title100">
+        <button class = "btn" id="back" (click)="son()" routerLink = "/albums"><i class="fa fa-chevron-circle-left" aria-hidden="true"style="font-size:50px"></i></button>
+        <h1 id="title101">{{profilTitle}}</h1>
+        <button (click)="logout()" class = "btn" id="logout"><i class="fa fa-sign-out" aria-hidden="true" style="font-size:50px"></i></button>
+    </div>
+ 
+    <!-- <div id="big">
+        <div id="avatarDiv">
+            <div id="avatar"><span class='special-word'>.</span></div>
+        </div>
+        <div id="infoProfil">
+            <p> UserEmail: {{useremail}}</p>
+            <p> Nickname: {{nickname}}</p>
+            <p> LastLoggedIn: {{lastLoggedIn}}</p>
+            <p> LastLoggedOut: {{lastLoggedOut}}</p>
+    
+            <div class="listUsers" *ngFor="let users of friends">
+                <div class="listUsersText">
+                    <p id="userID" >
+                        {{users}}
+                    </p> 
+                </div>
+    
+                <div class="listUsersButtons">
+                    <button mat-raised-button id="userIDButton"  (click)="removeFriend($event.target)">
+                        Enlever comme ami <span class='special-word'>{{users}}</span>
+                    </button>
+                </div>
+    
+            </div>
+    
+        </div> -->
+ 
+        <div class="row">
+            <div class="column">
+                <div id="avatar"><span class='special-word'>.</span></div>
+            </div>
+            <div class="column2">
+                <div id="infoProfil">
+                    <p> {{info1}} {{useremail}}</p>
+                    <p> {{info2}} {{nickname}}</p>
+                    <p> {{info3}} {{lastLoggedIn}}</p>
+                    <p> {{info4}} {{lastLoggedOut}}</p>
+                    <p> {{info5}}</p>
+                    <div class="listUsers" *ngFor="let users of friends">
+                        <div class="listUsersText">
+                            <p id="userID" >
+                                {{users}}
+                            </p> 
+                        </div>
+            
+                        <div class="listUsersButtons">
+                            <button mat-raised-button id="userIDButton"  (click)="removeFriend($event.target)">
+                                Enlever comme ami <span class='special-word'>{{users}}</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <!-- </div> -->
+</div>

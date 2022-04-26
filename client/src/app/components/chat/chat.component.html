@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" id="principal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Chat</title>
+</head> 
+<body>
+  
+  <div id="title9">
+    <button class = "btn" id="back" routerLink = "/rooms" (click)="leaveDrawing()"><i class="fa fa-chevron-circle-left" aria-hidden="true"style="font-size:30px"></i></button>
+    <h1 id="title10">{{chatTITLE}}</h1>
+    <!-- <button (click)="changeRoom()" class = "btn">{{roomChange}}</button> -->
+    <button (click)="logout()" class = "btn" id="logout"><i class="fa fa-sign-out" aria-hidden="true" style="font-size:30px"></i></button>
+  </div>
+
+  <div class="chat-container">
+    
+    <main class="chat-main">
+      <!-- <div class="test"></div>> -->
+      <div class="chat-messages" #scrollMe [scrollTop]="scrollMe.scrollHeight" style="overflow-y:auto">
+          <div class="message-icon" id ="message-icon"></div>
+          <!--<div class="left">-->
+
+
+               <div class="message-area" id="message-area" *ngFor="let msg of this.message" >
+                    <div *ngIf="(msg.nickname!=currentNickname)" class="message-container">
+                    
+                        <div style="display:inline">{{msg.nickname}}</div>
+                        &nbsp;
+                        <div style="display:inline">{{ msg.time }}</div>
+                        <br>
+                        <div>{{msg.message}}</div>
+                    </div>
+
+                    <div *ngIf="(msg.nickname==currentNickname)" class="my-chat">
+                      
+                        <div style="display:inline">{{msg.nickname}}</div>
+                        &nbsp;
+                        <div style="display:inline">{{ msg.time }}</div>
+                        <br>
+                        <div>{{msg.message}}</div>
+                    
+                    </div>
+                    
+               </div>
+       
+           
+      </div>
+    </main>
+    
+    <div class="chat-form-container"> 
+      <textarea #chatinput class="child" maxlength ="500" required></textarea>
+      <!--<button (click)="sendchatinput(chatinput.value)" class="child">Envoyé</button>-->
+      <button (click)="sendchatinput(chatinput.value)" id="send" class="btn"><i class="fa fa-send" style="font-size:30px;margin-top:15px;left:900px;"></i></button>
+    </div>
+  </div>
+
+</body>
+</html>

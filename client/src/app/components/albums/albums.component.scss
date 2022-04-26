@@ -1,0 +1,262 @@
+body{overflow: scroll;
+    overflow-x: hidden;}
+
+.title {
+    // background-color: #592bc7;
+    // color: azure;
+}
+
+#title4 {
+    margin-left: 50px;
+    display: inline-block;
+}
+
+#logout {
+	float: right;
+}
+
+.SectionAlbums {
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    // position: absolute;
+    left:15%;
+}
+
+.listAlbumsButtons {
+    float: bottom;
+    width: 50%;
+    height: 307.5px; // pour que chaque album soit en vertical line
+    margin-top: 20px;
+    float:left; display:inline; width: 49%;
+}
+
+.listAlbums {
+    float: top;
+    width: 50%;
+    margin-top: 20px;
+    float:left; display:inline; width: 49%;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.albums {
+    // background-color: aqua;
+    border-style: solid;
+    height: 400px;
+    width: 450px;
+    text-align: right;
+}
+
+#albumCover {
+    background-image : url("../../../assets/color.png");
+    background-size: cover;
+    font-size: 25px;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--light-color);
+	color: var(--dark-color-a);
+	border: 0;
+	font-size: 17px;
+}
+
+.center_me {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+  
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+  
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* Whatever width you want */
+}
+
+#color {
+    font-size: 50px;
+    height: 50px;
+}
+
+.pseudo {
+    position: relative;
+    display: block;
+    height: 60px;
+}
+
+.pass {
+    position: relative;
+    display: block;
+    margin-top: 12px;
+    height: 70px;
+}
+
+mat-label {
+    color: black;
+}
+
+#albumIDButton {
+    margin-right: 10px;
+    background-color: #2ad11a;
+    width: 105px;
+}
+
+#albumIDButtonDelete {
+    margin-right: 10px;
+    background-color: #FA4353;;
+    width: 105px;
+}
+
+#albumQuitter {
+    margin-right: 10px;
+    width: 105px;
+}
+
+#albumModifier {
+    width: 105px;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.subtext-container {
+    width: 100%;
+    display: inline-block;
+}
+
+#createAlbum{
+    margin: 15px;
+    // background-color: #592bc7;
+    // color:azure;
+    width: 26%;
+    height: 50px;
+}
+
+#menuCompte {
+    margin: 5px;
+    background-color: #592bc7;
+    color:azure;
+    width: 26%;
+    height: 50px;
+}
+
+#chatRoom {
+    margin: 5px;
+    background-color: #592bc7;
+    color:azure;
+    width: 26%;
+    height: 50px;
+}
+
+#sortAlpha {
+    margin: 5px;
+    height: 50px;
+}
+
+#sortCreate {
+    margin: 5px;
+    height: 50px;
+}
+
+.special-word { 
+    font-size: 0;
+} 
+
+.fa-comments {
+    color: black;
+  }
+
+  .notifi {
+    display: inline-block; /* Inline elements with width and height. TL;DR they make the icon buttons stack from left-to-right instead of top-to-bottom /
+    position: relative; / All 'absolute'ly positioned elements are relative to this one /
+    padding: 2px 5px; / Add some padding so it looks nice */
+    float: right;
+  }
+
+.button__badge {
+    visibility: hidden; //A CHANGER
+    position: absolute;
+    top: 0;
+    right: 0;
+  padding: 1px 9px;
+  border-radius: 50%;
+  background: red;
+  color: red;
+}
+
+.erreuAnimation {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97);
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    transform: translate3d(0, 0, 0);
+    // transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  }
+  
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }

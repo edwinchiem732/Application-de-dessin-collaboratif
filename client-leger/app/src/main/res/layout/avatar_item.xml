@@ -1,0 +1,17 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/avatar_card_view"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_margin="2dp"
+    app:cardElevation="6dp">
+
+    <ImageView
+        android:id="@+id/avatar_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/avatar1" />
+
+</androidx.cardview.widget.CardView>

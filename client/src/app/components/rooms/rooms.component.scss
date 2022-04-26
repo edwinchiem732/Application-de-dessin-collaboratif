@@ -1,0 +1,158 @@
+.wrapper {
+    position: relative;
+}
+
+.title {
+    // background-color: #592bc7;
+    // color: azure;
+}
+
+#title8 {
+    margin-left: 50px;
+    display: inline-block;
+}
+
+#error {
+    visibility: hidden;
+    color: red;
+}
+
+#logout {
+    float: right;
+}
+
+#createRoom {
+    // background-color: #592bc7;
+    // color:azure;
+}
+
+.searchRoom {
+    // background-color: #592bc7;
+    // color:azure;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 5px 15px;
+    background: var(--light-color);
+    color: var(--dark-color-a);
+    border: 0;
+    font-size: 17px;
+}
+
+.listRoomsText {
+    float: left;
+    width: 50%;
+}
+
+.listRoomsButtons {
+    float: right;
+    width: 50%;
+}
+
+#roomID {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+} 
+
+#roomIDButton {
+    width: 50%;
+    float: left;
+    margin-bottom: 15px;
+    background-color: #2ad11a;
+}
+
+#roomIDQuitterButton {
+    width: 33%;
+    margin-bottom: 15px;
+}
+
+#roomIDButtonDelete {
+    width: 50%;
+    float: right;
+    margin-bottom: 15px;
+    background-color: #FA4353;
+    
+}
+
+.joindre {
+    text-align: left;
+}
+
+.special-word { 
+    font-size: 0;
+} 
+
+.input {
+    float: left;
+    width: 90%;
+}
+
+#createRoom {
+    float: right;
+    width: 10%;
+    height: 60px;
+    margin-top: 5px;
+}
+
+.search {
+    float: left;
+    width: 90%;
+}
+
+.searchRoom {
+    float: right;
+    width: 10%;
+    height: 60px;
+    margin-top: 5px;
+    background-color: #d6dbdb;
+}
+
+.subtext-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#CreerCanal {
+    float: left;
+    width: 100%;
+    height: 50px;
+    background-color: #d6dbdb;
+}
+
+#filtrerCanaux {
+    float: right;
+    width: 50%;
+    height: 50px;
+}
+
+.subtext-container2 {
+    width: 100%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fa-comments {
+    color: black;
+  }
+
+  .notifi {
+    display: inline-block; /* Inline elements with width and height. TL;DR they make the icon buttons stack from left-to-right instead of top-to-bottom /
+    position: relative; / All 'absolute'ly positioned elements are relative to this one /
+    padding: 2px 5px; / Add some padding so it looks nice */
+    float: right;
+  }
+
+.button__badge {
+    visibility: hidden; //A CHANGER
+    position: absolute;
+    top: 0;
+    right: 0;
+  padding: 1px 9px;
+  border-radius: 50%;
+  background: red;
+  color: red;
+}
